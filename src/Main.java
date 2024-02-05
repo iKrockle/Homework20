@@ -41,8 +41,7 @@ public class Main {
         int counter;
         for (String word:words){
             if(countMap.containsKey(word)){
-                counter = countMap.get(word);
-                counter++;
+                counter = countMap.get(word)+1;
                 countMap.put(word,counter);
             }
             else{
